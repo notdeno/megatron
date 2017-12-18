@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Megatron</title>
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+
+    <div class="mycalc">
+        <form name="calculator" id="calculator">
+            <input type="text" name="inputwindow" id="inputwindow">
+
+            <div>
+                <input type="button" class="digi-button" id="one" value="1" onclick="takeValue(this)">
+                <input type="button" class="digi-button" id="two" value="2" onclick="takeValue(this)">
+                <input type="button" class="digi-button" id="three" value="3" onclick="takeValue(this)">
+                <input type="button" class="digi-button" id="plus" value="+" onclick="takeValue(this)">
+            </div>
+            <div>
+                <input type="button" class="digi-button" id="four" value="4" onclick="takeValue(this)">
+                <input type="button" class="digi-button" id="five" value="5" onclick="takeValue(this)">
+                <input type="button" class="digi-button" id="six" value="6" onclick="takeValue(this)">
+                <input type="button" class="digi-button" id="minus" value="-" onclick="takeValue(this)">
+            </div>
+            <div>
+                <input type="button" class="digi-button" id="seven" value="7" onclick="takeValue(this)">
+                <input type="button" class="digi-button" id="eight" value="8" onclick="takeValue(this)">
+                <input type="button" class="digi-button" id="nine" value="9" onclick="takeValue(this)">
+                <input type="button" class="digi-button" id="by" value="*" onclick="takeValue(this)">
+            </div>
+            <div>
+                <input type="button" class="digi-button" id="zero" value="0" onclick="takeValue(this)">
+                <input type="button" class="digi-button" id="decimal" value="." onclick="takeValue(this)">
+                <input type="button" class="digi-button" id="divide" value="/" onclick="takeValue(this)">
+                <input type="button" class="digi-button" id="percent" value="%" onclick="takeValue(this)">
+            </div>
+            <div class="results">
+                <input type="button" class="digi-button" id="equal" value="=" onclick="calculateResult()">
+                <button type="button" class="digi-button" id="clear" value="" onclick="clearInput()">Clear</button>
+            </div>
+
+        </form>
+    </div>
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
